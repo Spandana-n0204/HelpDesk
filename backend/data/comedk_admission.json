@@ -1,0 +1,85 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "quota_type": "COMEDK",
+  "entry_type": "1st Year B.E.",
+  "conducting_authority": "Consortium of Medical, Engineering and Dental Colleges of Karnataka (COMEDK)",
+
+  "academic_years": {
+    "2025-2026": {
+      "admission_process": [
+        "Obtain allotment letter from COMEDK",
+        "Report to DSCE, Building No.02 – Main Library for verification",
+        "Complete online admission process",
+        "Produce allotment letter and application number at Fee Section (Building No.1, Room 206)",
+        "Pay fees via Debit Card / UPI / NEFT / RTGS",
+        "Collect fee challan",
+        "Print application form using fee challan reference",
+        "Submit required original documents",
+        "Obtain acknowledgement slip"
+      ],
+
+      "fee_structure": {
+        "karnataka_students_total_inr": 30610,
+        "outside_karnataka_students_total_inr": 32110,
+        "outside_india_students_total_inr": 42110,
+        "components": {
+          "skill_lab_fee_inr": 20000,
+          "vtu_fee_inr": 10610,
+          "eligibility_fee_inr": {
+            "karnataka": 0,
+            "outside_karnataka": 1500,
+            "outside_india": 11500
+          }
+        }
+      },
+
+      "payment_modes": [
+        "Debit Card",
+        "UPI",
+        "NEFT",
+        "RTGS"
+      ],
+
+      "documents_required": [
+        "Original COMEDK Allotment Letter with fee receipt",
+        "Original 10th Marks Card",
+        "Original 12th Marks Card",
+        "Original Transfer Certificate",
+        "Migration / Study Certificate (for Non-Karnataka students)",
+        "Karnataka-Kalyana Region Certificate (if applicable)",
+        "Parent PAN Card or Aadhaar Card (Soft copy)",
+        "Student Passport Size Photo, Signature, Aadhaar Card (Soft copy)",
+        "Three sets of photocopies of all documents",
+        "Passport & Visa copy (for students studied outside India)"
+      ]
+    }
+  },
+
+  "hostel_contacts": {
+    "indian_boys_hostel": "080-42161701",
+    "nri_boys_hostel": "080-42162745",
+    "girls_hostel": "080-42161727"
+  },
+
+  "reporting_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "pincode": "560111",
+    "campus_reporting_points": [
+      "Building No.02 – Main Library",
+      "Fee Section (Building No.1, Room 206)"
+    ]
+  },
+
+  "contact_details": {
+    "phone": [
+      "+91 80 26662226",
+      "+91 80 26665910",
+      "+91 80 26665926",
+      "+91 80 42161707"
+    ],
+    "fax": "080-26660789",
+    "website": "https://www.dayanandasagar.edu"
+  }
+}

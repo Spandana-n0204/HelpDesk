@@ -1,0 +1,125 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "quota_type": "KCET (KEA)",
+  "entry_type": "1st Year B.E.",
+  "conducting_authority": "Karnataka Examinations Authority (KEA)",
+
+  "academic_years": {
+    "2025-2026": {
+      "admission_process": [
+        "Download KEA Confirmation Slip from KEA login",
+        "Report to Main Library (Building No.2) for biometric attendance and admission order copy",
+        "Scan original documents in color (JPG/JPEG under 1MB)",
+        "Upload documents and passport-size photo (under 500KB)",
+        "Submit allotment letter and application number at Fee Section (Building No.1, 2nd Floor, Room 206)",
+        "Pay fees via Debit Card / UPI / NEFT / RTGS",
+        "Collect fee challan",
+        "Print application using fee challan reference",
+        "Submit original documents",
+        "Obtain acknowledgement"
+      ],
+      "fee_structure": {
+        "karnataka_students_total_inr": 20000,
+        "outside_karnataka_students_total_inr": 21500,
+        "outside_india_students_total_inr": 31500,
+        "components": {
+          "skill_lab_fee_inr": 20000,
+          "eligibility_fee_inr": {
+            "karnataka": 0,
+            "outside_karnataka": 1500,
+            "outside_india": 11500
+          }
+        }
+      },
+      "payment_modes": [
+        "Debit Card",
+        "UPI",
+        "NEFT",
+        "RTGS"
+      ],
+      "documents_required": [
+        "KEA Confirmation Slip with fee paid receipt",
+        "Original 10th Marks Card",
+        "Original 12th (PUC) Marks Card",
+        "Migration/Study Certificate (for Non-Karnataka students)",
+        "Caste/Category/KKR/Rural/Kannada Medium Certificates (if applicable)",
+        "Parent PAN Card / Aadhaar Card (Soft Copy)",
+        "Student Passport Size Photo, Signature & Aadhaar (Soft Copy)",
+        "Three sets of photocopies",
+        "Passport & Visa copy (for students studied outside India)"
+      ]
+    },
+
+    "2021-2022": {
+      "admission_process": [
+        "Obtain allotment order from KEA",
+        "Report to Admission Section, Library Block, DSCE, Bangalore (Building No. 02)",
+        "Verification of admission order and original documents",
+        "Wait for turn to complete online admission entry",
+        "Mention student name, mobile number, and branch on back of Demand Draft",
+        "Submit Demand Draft to cashier",
+        "Complete online application entry",
+        "Take printout of application form",
+        "Candidate and parents must sign the form",
+        "Submit required documents to admission authority",
+        "Obtain acknowledgement",
+        "Collect fee paid receipt from cashier using acknowledgement"
+      ],
+      "fee_structure": {
+        "karnataka_students": {
+          "college_fee_inr": 20000,
+          "skill_lab_fee_inr": 1500,
+          "total_payable_at_college_inr": 21500
+        },
+        "outside_karnataka_students": {
+          "college_fee_inr": 20000,
+          "skill_lab_fee_inr": 1500,
+          "total_payable_at_college_inr": 21500
+        },
+        "outside_india_students": {
+          "college_fee_inr": 20000,
+          "eligibility_fee_inr": 11500,
+          "total_payable_at_college_inr": 31500
+        },
+        "payment_mode": "Demand Draft in favor of Dayananda Sagar College of Engineering, payable at Bangalore",
+        "notes": "KEA tuition fee already paid to KEA; only remaining college components payable at DSCE"
+      },
+      "documents_required": [
+        "Original Admission Order issued by KEA",
+        "Original 10th Marks Card",
+        "Original 12th Marks Card",
+        "Original Transfer Certificate (if qualified outside Karnataka PU Board)",
+        "Original Migration Certificate (if qualified outside Karnataka PU Board)",
+        "Photocopy of Student Aadhaar Card",
+        "Photocopy of Parent PAN Card",
+        "3 sets of attested photocopies of all submitted documents",
+        "Category/Income/Rural/Kannada Medium/Hyderabad Karnataka/Sports Certificate (if applicable)",
+        "Two passport size photographs",
+        "One stamp size photograph"
+      ]
+    }
+  },
+
+  "reporting_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "pincode": "560111",
+    "campus_reporting_points": [
+      "Main Library (Building No.2)",
+      "Fee Section (Building No.1, 2nd Floor, Room 206)",
+      "Admission Section, Library Block"
+    ]
+  },
+
+  "contact_details": {
+    "phone": [
+      "+91 80 26662226",
+      "+91 80 26665910",
+      "+91 80 26665926",
+      "+91 80 42161707"
+    ],
+    "fax": "080-26660789",
+    "website": "https://www.dayanandasagar.edu"
+  }
+}

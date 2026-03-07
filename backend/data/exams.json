@@ -1,0 +1,19 @@
+{
+  "program": "B.E",
+  "duration_years": 4,
+  "semester_duration_months": 4,
+  "exam_pattern": {
+    "CIE": {
+      "count": 3,
+      "marks_each": 50,
+      "conducted_monthly": true
+    },
+    "Lab_Internals": {
+      "conducted_with_third_CIE": true
+    },
+    "SEE": {
+      "marks": 100,
+      "description": "Semester End Examination"
+    }
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "dataset_description": "Structured knowledge base for answering questions about DSCE including admissions, fees, placements, campus life and facilities.",
+  "version": "1.0",
+
+  "files": [
+    {
+      "file_name": "faq.json",
+      "priority": 1,
+      "description": "Frequently asked questions covering admissions, fees, placements, hostel, campus and general information.",
+      "topics": [
+        "general college information",
+        "admissions",
+        "fees",
+        "placements",
+        "hostel",
+        "campus facilities"
+      ],
+      "keywords": [
+        "dsce faq",
+        "dsce questions",
+        "common questions dsce",
+        "dsce information"
+      ]
+    },
+
+    {
+      "file_name": "college_overview.json",
+      "priority": 2,
+      "description": "General overview of Dayananda Sagar College of Engineering including history, reputation and institutional details.",
+      "topics": [
+        "college overview",
+        "institution background",
+        "college details"
+      ],
+      "keywords": [
+        "about dsce",
+        "dsce overview",
+        "dayananda sagar college info"
+      ]
+    },
+
+    {
+      "file_name": "departments_courses.json",
+      "priority": 3,
+      "description": "List of departments and engineering programs offered by DSCE.",
+      "topics": [
+        "engineering branches",
+        "departments",
+        "courses offered"
+      ],
+      "keywords": [
+        "dsce branches",
+        "courses in dsce",
+        "engineering departments dsce"
+      ]
+    },
+
+    {
+      "file_name": "cet_admission.json",
+      "priority": 4,
+      "description": "Admission details for Karnataka CET (KCET) quota seats.",
+      "topics": [
+        "kcet admission",
+        "government quota",
+        "kea counseling"
+      ],
+      "keywords": [
+        "kcet dsce",
+        "cet admission dsce",
+        "government quota dsce"
+      ]
+    },
+
+    {
+      "file_name": "comedk_admission.json",
+      "priority": 5,
+      "description": "Admission process and eligibility for COMEDK quota seats.",
+      "topics": [
+        "comedk admission",
+        "private engineering admission",
+        "comedk counseling"
+      ],
+      "keywords": [
+        "comedk dsce",
+        "comedk admission dsce",
+        "private seat dsce"
+      ]
+    },
+
+    {
+      "file_name": "management_admission.json",
+      "priority": 6,
+      "description": "Direct admission and management quota details including fee ranges.",
+      "topics": [
+        "management quota",
+        "direct admission",
+        "institution quota"
+      ],
+      "keywords": [
+        "management quota dsce",
+        "direct admission dsce",
+        "dsce management seats"
+      ]
+    },
+
+    {
+      "file_name": "fees_structure.json",
+      "priority": 7,
+      "description": "Fee structure for KCET, COMEDK, DCET and management quota seats.",
+      "topics": [
+        "engineering fees",
+        "tuition fees",
+        "admission cost"
+      ],
+      "keywords": [
+        "dsce fees",
+        "engineering fees dsce",
+        "tuition fee dsce"
+      ]
+    },
+
+    {
+      "file_name": "placements.json",
+      "priority": 8,
+      "description": "Placement statistics, recruiting companies and placement cell activities.",
+      "topics": [
+        "placement statistics",
+        "recruiting companies",
+        "placement training"
+      ],
+      "keywords": [
+        "dsce placements",
+        "companies visiting dsce",
+        "placement record dsce"
+      ]
+    },
+
+    {
+      "file_name": "hostel_facilities.json",
+      "priority": 9,
+      "description": "Hostel accommodation details, facilities, rules and hostel contacts.",
+      "topics": [
+        "student accommodation",
+        "hostel facilities",
+        "mess rules"
+      ],
+      "keywords": [
+        "dsce hostel",
+        "hostel facilities dsce",
+        "student accommodation dsce"
+      ]
+    },
+
+    {
+      "file_name": "architecture_campus.json",
+      "priority": 10,
+      "description": "Campus infrastructure, buildings, laboratories, library and environment.",
+      "topics": [
+        "campus infrastructure",
+        "labs",
+        "library",
+        "green campus"
+      ],
+      "keywords": [
+        "dsce campus",
+        "dsce infrastructure",
+        "labs and facilities dsce"
+      ]
+    }
+  ]
+}

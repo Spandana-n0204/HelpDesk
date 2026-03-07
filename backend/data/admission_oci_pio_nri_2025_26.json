@@ -1,0 +1,86 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "document_type": "Admission Under OCI/PIO/NRI/Management Quota",
+  "academic_year": "2025-26",
+  "quota_type": ["OCI", "PIO", "NRI", "Management"],
+  "program_fees_usd": {
+    "Aeronautical Engineering": 5000,
+    "Civil Engineering": 5000,
+    "Computer Science Engineering": 7750,
+    "Information Science Engineering": 7250,
+    "Mechanical Engineering": 5000
+  },
+  "additional_fees": {
+    "annual_other_fees_inr": 50000,
+    "note": "Other institutional charges applicable every year"
+  },
+  "payment_mode": [
+    "Demand Draft in favor of Dayananda Sagar College of Engineering",
+    "Online payment after management confirmation"
+  ],
+  "minimum_academic_requirements": {
+    "10th_standard": "Minimum 70% in Maths and Science separately",
+    "12th_standard": "Minimum 65% in Maths and Physics separately (Pre-Board)",
+    "entrance_exam_requirement": "Must appear in CET / COMEDK / AIEEE / JEE / Any National Entrance Test",
+    "foreign_board_requirement": "AIU Equivalence Certificate mandatory (if non-Indian board)"
+  },
+  "documents_required": {
+    "oci_pio": [
+      "10th Marks Card",
+      "11th Marks Card",
+      "Transfer Certificate",
+      "Migration Certificate",
+      "OCI Card",
+      "Residential Proof",
+      "Parent Passport Copy"
+    ],
+    "nepal_students": [
+      "10th Marks Card",
+      "11th Marks Card",
+      "Transfer Certificate",
+      "Migration Certificate",
+      "Nepal Citizenship Card",
+      "Residential Proof"
+    ],
+    "nri_students": [
+      "10th Marks Card",
+      "11th Marks Card",
+      "Transfer Certificate",
+      "Migration Certificate",
+      "Parents NRI Certificate from Embassy",
+      "Parents Employment Proof (Minimum 5 years)",
+      "Parents Passport & Visa Copy",
+      "Student Passport & Visa",
+      "Residential Proof"
+    ]
+  },
+  "hostel_contacts": [
+    {
+      "hostel_name": "Indian Boys Hostel",
+      "contact_number": "080-42161701"
+    },
+    {
+      "hostel_name": "NRI Boys Hostel",
+      "contact_number": "080-42162745"
+    },
+    {
+      "hostel_name": "Girls Hostel",
+      "contact_number": "080-42161727"
+    }
+  ],
+  "campus_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bangalore",
+    "pincode": "560111"
+  },
+  "contact_details": {
+    "phone": [
+      "+91 80 26662226",
+      "+91 80 26665910",
+      "+91 80 26665926",
+      "+91 80 42161707"
+    ],
+    "fax": "080-26660789",
+    "website": "https://www.dayanandasagar.edu"
+  }
+}

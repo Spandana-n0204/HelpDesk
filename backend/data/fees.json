@@ -1,0 +1,77 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "program": "B.E. / B.Tech",
+  "fee_structure": {
+    
+    "kcet_government_quota": {
+      "seat_type": "KEA Merit Seat",
+      "annual_fee_breakdown_inr": {
+        "kea_tuition_fee_paid_during_allotment": 95000,
+        "university_registration_and_processing": 15000,
+        "college_miscellaneous_fees": 10000
+      },
+      "approx_total_per_year_inr": 120000,
+      "approx_total_4_years_inr": 480000,
+      "notes": [
+        "Fees fixed by Karnataka Examination Authority (KEA)",
+        "Paid partly on KEA portal and partly at college during admission"
+      ]
+    },
+
+    "comedk_quota": {
+      "seat_type": "COMEDK UGET Seat",
+      "annual_fee_breakdown_inr": {
+        "tuition_fee": 240000,
+        "university_and_exam_fees": 15000,
+        "college_miscellaneous_fees": 15000
+      },
+      "approx_total_per_year_inr": 270000,
+      "approx_total_4_years_inr": 1080000,
+      "notes": [
+        "Tuition fee fixed by COMEDK consortium",
+        "Additional institutional fees may vary slightly by year"
+      ]
+    },
+
+    "dcet_lateral_entry": {
+      "seat_type": "Diploma CET (2nd Year Entry)",
+      "annual_fee_breakdown_inr": {
+        "kea_tuition_fee": 95000,
+        "university_registration": 15000,
+        "college_miscellaneous": 10000
+      },
+      "approx_total_per_year_inr": 120000,
+      "program_duration_years": 3,
+      "approx_total_program_fee_inr": 360000,
+      "notes": [
+        "Applicable for diploma holders entering directly to 2nd year",
+        "Fees similar to KCET government quota seats"
+      ]
+    },
+
+    "management_quota": {
+      "seat_type": "Institution / Management Seat",
+      "fee_details": "Branch-wise management fees are listed in management_admission.json",
+      "approx_range_per_year_inr": {
+        "lowest_branches": 300000,
+        "high_demand_branches": 550000
+      },
+      "notes": [
+        "Fees vary significantly by branch (CSE, AI, ISE higher)",
+        "Additional institutional fees ~₹50,000 per year may apply"
+      ]
+    }
+
+  },
+
+  "other_common_fees": {
+    "hostel_fee_per_year_range_inr": {
+      "minimum": 120000,
+      "maximum": 180000
+    },
+    "one_time_admission_charges_inr": {
+      "vt_u_registration": 10000,
+      "library_and_id": 5000
+    }
+  }
+}

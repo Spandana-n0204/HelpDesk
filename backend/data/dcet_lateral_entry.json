@@ -1,0 +1,157 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "quota_type": "DCET",
+  "entry_type": "2nd Year B.E. (Lateral Entry)",
+  "conducting_authority": "Karnataka Examination Authority (KEA)",
+
+  "overview": {
+    "description": "Diploma holders can join the B.E. program directly in the second year through the DCET (Diploma Common Entrance Test) conducted by KEA.",
+    "program_duration_after_entry": "3 years",
+    "entry_semester": "3rd Semester"
+  },
+
+  "academic_years": {
+
+    "2024-2025": {
+      "reporting_location": "Building No. 02, Main Library, DSI Campus",
+
+      "admission_process": [
+        "Obtain DCET allotment letter from KEA",
+        "Report to DSCE, Building No. 02, Main Library",
+        "Document verification",
+        "Upload scanned original documents in student login",
+        "Pay fees via Debit Card / UPI / NEFT / RTGS",
+        "Collect fee challan",
+        "Print application form",
+        "Submit original documents",
+        "Obtain acknowledgement"
+      ],
+
+      "fee_structure": {
+        "karnataka_students": {
+          "fee_paid_at_kea_inr": 99924,
+          "college_fee_inr": 20000,
+          "skill_lab_fee_inr": 1500,
+          "total_payable_at_college_inr": 21500
+        },
+        "outside_india_students": {
+          "college_fee_inr": 20000,
+          "eligibility_fee_inr": 11500,
+          "total_payable_at_college_inr": 31500
+        }
+      },
+
+      "documents_required": [
+        "DCET Allotment Letter issued by KEA",
+        "DCET Fee Paid Receipt",
+        "10th Marks Card",
+        "Diploma Marks Cards (All Semesters)",
+        "Provisional Degree Certificate",
+        "Migration / Study Certificate (if non-Karnataka)",
+        "Caste or Category Certificates (if applicable)",
+        "Parent PAN or Aadhaar Card",
+        "Student Aadhaar Card",
+        "Passport Size Photograph",
+        "Student Signature",
+        "3 sets of photocopies of all documents"
+      ],
+
+      "document_upload_rules": {
+        "format": "JPEG",
+        "max_file_size_mb": 1,
+        "passport_photo_max_kb": 500
+      }
+    },
+
+    "2023-2024": {
+      "reporting_location": "Building No.02, Main Library, DSI Campus",
+
+      "admission_process": [
+        "Obtain allotment order from KEA",
+        "Report to DSCE for verification",
+        "Document verification",
+        "Pay fees through Debit Card / UPI / NEFT / RTGS",
+        "Complete online admission entry",
+        "Upload scanned documents",
+        "Print application form and submit signed copy",
+        "Submit required documents",
+        "Obtain acknowledgement"
+      ],
+
+      "fee_structure": {
+        "karnataka_students_total_inr": 24000,
+        "outside_karnataka_students_total_inr": 25500,
+        "outside_india_students_total_inr": 35500,
+        "components": {
+          "skill_lab_fee_inr": 20000,
+          "vtu_fee_inr": 4000,
+          "eligibility_fee": {
+            "karnataka": 0,
+            "outside_karnataka": 1500,
+            "outside_india": 11500
+          }
+        }
+      }
+    },
+
+    "2022-2023": {
+      "reporting_location": "Admission Section, Library Block, DSCE",
+
+      "admission_process": [
+        "Obtain allotment order from KEA",
+        "Report to DSCE Admission Section",
+        "Document verification",
+        "Pay fees via Demand Draft or Debit Card",
+        "Complete online admission entry",
+        "Print application form",
+        "Submit required documents",
+        "Collect acknowledgement",
+        "Collect fee receipt"
+      ],
+
+      "fee_structure": {
+        "karnataka_students_total_inr": 20000,
+        "outside_karnataka_students_total_inr": 21500,
+        "outside_india_students_total_inr": 31500
+      },
+
+      "payment_modes": [
+        "Demand Draft",
+        "Debit Card"
+      ]
+    }
+
+  },
+
+  "hostel_contacts": [
+    {
+      "hostel_name": "Indian Boys Hostel",
+      "contact_number": "080-42161701"
+    },
+    {
+      "hostel_name": "NRI Boys Hostel",
+      "contact_number": "080-42162745"
+    },
+    {
+      "hostel_name": "Girls Hostel",
+      "contact_number": "080-42161727"
+    }
+  ],
+
+  "campus_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bangalore",
+    "pincode": "560111"
+  },
+
+  "contact_details": {
+    "phone": [
+      "+91 80 26662226",
+      "+91 80 26665910",
+      "+91 80 26665926",
+      "+91 80 42161707"
+    ],
+    "fax": "080-26660789",
+    "website": "https://www.dayanandasagar.edu"
+  }
+}

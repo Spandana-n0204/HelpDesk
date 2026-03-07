@@ -1,0 +1,59 @@
+{
+  "college_name": "Dayananda Sagar College of Engineering",
+  "short_name": "DSCE",
+  "established_year": 1979,
+  "founder": "Late Sri R. Dayananda Sagar",
+  "institution_type": "Private Autonomous Engineering College",
+  "governing_body": "Mahatma Gandhi Vidya Peetha Trust",
+  "parent_institution": "Dayananda Sagar Institutions",
+  "location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India"
+  },
+  "affiliation": {
+    "university": "Visvesvaraya Technological University (VTU), Belagavi",
+    "autonomous_status": true
+  },
+  "approvals_and_accreditation": {
+    "approved_by": [
+      "All India Council for Technical Education (AICTE)"
+    ],
+    "accredited_by": [
+      "National Assessment and Accreditation Council (NAAC) - Grade A",
+      "National Board of Accreditation (NBA) for several programs"
+    ]
+  },
+  "campus_details": {
+    "campus_type": "Urban",
+    "campus_area_acres": 29,
+    "campus_description": "Green and technology-enabled campus located on Shavige Malleshwara Hills in South Bengaluru with modern infrastructure, laboratories, library facilities, and Wi-Fi connectivity."
+  },
+  "academic_overview": {
+    "undergraduate_programs": "Multiple Bachelor of Engineering (B.E.) programs across major engineering disciplines",
+    "postgraduate_programs": "Postgraduate programs including M.Tech, MBA, and MCA",
+    "doctoral_programs": "Research and PhD programs in multiple engineering departments",
+    "research_centers": 18
+  },
+  "student_and_faculty_strength": {
+    "approx_total_students": 8000,
+    "approx_faculty_members": 500
+  },
+  "rankings_and_recognition": {
+    "nirf_engineering_ranking_band": "201-300",
+    "years_of_legacy": "45+ years of technical education"
+  },
+  "key_highlights": [
+    "Autonomous engineering college affiliated with VTU",
+    "NAAC A grade accredited institution",
+    "Multiple NBA accredited engineering programs",
+    "Strong industry collaborations and research culture",
+    "Active placement cell with major recruiters such as TCS, Infosys, Accenture, Bosch, and SAP",
+    "Centers of Excellence in areas like AI, Machine Learning, IoT, Robotics, and VLSI",
+    "Innovation and Entrepreneurship Development Cell supporting startups",
+    "Wi-Fi enabled campus with modern laboratories and smart classrooms",
+    "Vibrant campus life with technical clubs, student chapters, and cultural activities"
+  ],
+  "official_website": "https://www.dsce.edu.in"
+}

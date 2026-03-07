@@ -1,0 +1,95 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "hostel_overview": {
+    "availability": "Separate hostels available for male and female B.E. students within the DSCE campus area.",
+    "room_type": "Well-furnished and spacious rooms with basic amenities for comfortable student living.",
+    "food": "Balanced and nutritious vegetarian and non-vegetarian meals are served in the hostel mess."
+  },
+
+  "hostel_facilities": [
+    "Indoor games",
+    "Outdoor games",
+    "Telephone facility",
+    "Washing machines",
+    "Hot water (solar and electric systems)",
+    "Well furnished spacious rooms",
+    "Vegetarian and non-vegetarian food",
+    "Dining hall and mess facility"
+  ],
+
+  "hostels": {
+    "men_hostels": [
+      {
+        "name": "Sardar Patel House",
+        "phone": "080-42161701"
+      },
+      {
+        "name": "Residences@DSI",
+        "phone": "080-42161705"
+      }
+    ],
+
+    "women_hostels": [
+      {
+        "name": "Sharada Girls Hostel",
+        "phone": "080-42161727"
+      },
+      {
+        "name": "Nelson Mandela Girls Hostel"
+      },
+      {
+        "name": "NRI Girls Hostel"
+      },
+      {
+        "name": "Ashirwada Girls Hostel"
+      },
+      {
+        "name": "Sanjeevi Thana Girls Hostel"
+      },
+      {
+        "name": "Vivek Girls Hostel"
+      },
+      {
+        "name": "Nest Girls Hostel"
+      }
+    ]
+  },
+
+  "hostel_rules": {
+    "general_rules": [
+      "Right of admission to hostel is reserved by the management.",
+      "Hostel fees must be paid for the full academic year before admission.",
+      "Hostel fees are non-refundable.",
+      "Caution deposit is refunded at the end of the academic year after deductions if any.",
+      "NRI and foreign students must pay hostel fees in USD.",
+      "Students cannot change rooms without written permission from the warden.",
+      "Guests are not permitted without written permission.",
+      "Attendance is taken daily in the hostel.",
+      "Ragging is strictly prohibited inside hostel premises.",
+      "Use of drugs, alcohol and smoking is strictly prohibited.",
+      "Pornographic material is not allowed inside the hostel.",
+      "Loud music and gambling are not permitted.",
+      "Students must return to the hostel before the stipulated time.",
+      "The warden has the authority to ask any inmate to vacate the hostel if rules are violated."
+    ],
+
+    "mess_rules": [
+      "Mess charges must be paid before the due date.",
+      "Mess operates on a dividing system for food expenses.",
+      "Outside food is not allowed in the dining hall.",
+      "Food will be served only during scheduled mess timings.",
+      "Self-service may be introduced in emergency situations.",
+      "Students are expected to avoid wasting food."
+    ],
+
+    "discipline_rules": [
+      "Maintain silence in corridors and common areas.",
+      "Furniture and hostel property must be handled carefully.",
+      "Birthday parties and celebrations are not allowed inside the hostel.",
+      "Vehicle parking is not permitted inside hostel premises.",
+      "Rooms must be locked when leaving.",
+      "Students should not disturb other residents.",
+      "Hostel management is not responsible for loss of valuables."
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "program": "Bachelor of Engineering (B.E)",
+  "duration_years": 4,
+
+  "branches": [
+    "Artificial Intelligence and Machine Learning",
+    "Aeronautical Engineering",
+    "Automobile Engineering",
+    "Biotechnology",
+    "Computer Science and Engineering",
+    "Computer Science and Business Systems",
+    "Computer Science & Engineering (Cyber Security)",
+    "Computer Science & Engineering (Data Science)",
+    "Computer Science & Engineering (Internet of Things and Cyber Security including Block Chain Technology)",
+    "Computer Science and Design",
+    "Chemical Engineering",
+    "Civil Engineering",
+    "Electrical & Electronics Engineering",
+    "Electronics & Communication Engineering",
+    "Information Science and Engineering",
+    "Electronics and Instrumentation Engineering",
+    "Mechanical Engineering",
+    "Medical Electronics Engineering",
+    "Electronics and Telecommunication Engineering",
+    "Robotics and Artificial Intelligence"
+  ],
+
+  "eligibility": {
+    "minimum_qualification": "PUC / 12th / 10+2 or equivalent",
+    "compulsory_subjects": [
+      "Physics",
+      "Mathematics",
+      "English"
+    ],
+    "optional_subjects_any_one": [
+      "Chemistry",
+      "Biology",
+      "Biotechnology",
+      "Computer Science",
+      "Electronics"
+    ],
+    "minimum_aggregate_general": 45,
+    "minimum_aggregate_karnataka_reserved_categories": 40,
+    "management_quota_minimum_aggregate": 50,
+    "note": "Physics, Chemistry and Mathematics must be passed individually for Management quota"
+  },
+
+  "total_branches_offered": 20
+}

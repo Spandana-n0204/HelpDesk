@@ -1,0 +1,151 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "faq_version": "rag_optimized_v1",
+  "faqs": [
+
+    {
+      "category": "general",
+      "question": "What is Dayananda Sagar College of Engineering?",
+      "keywords": ["dsce", "dayananda sagar college", "about dsce", "dsce overview"],
+      "short_answer": "Dayananda Sagar College of Engineering (DSCE) is a private engineering college in Bengaluru offering undergraduate and postgraduate engineering programs.",
+      "detailed_answer": "Dayananda Sagar College of Engineering (DSCE) is a well-known private engineering institution located in Kumaraswamy Layout, Bengaluru. It offers undergraduate, postgraduate and research programs in multiple engineering disciplines and is affiliated with Visvesvaraya Technological University (VTU)."
+    },
+
+    {
+      "category": "general",
+      "question": "Where is DSCE located?",
+      "keywords": ["dsce location", "where is dsce", "dsce address", "dayananda sagar location"],
+      "short_answer": "DSCE is located in Kumaraswamy Layout, Bengaluru, Karnataka.",
+      "detailed_answer": "Dayananda Sagar College of Engineering is located in Kumaraswamy Layout in South Bengaluru, Karnataka. The campus is well connected through city buses and other transportation facilities."
+    },
+
+    {
+      "category": "general",
+      "question": "Is DSCE a good engineering college?",
+      "keywords": ["is dsce good", "dsce review", "dsce ranking", "should i join dsce"],
+      "short_answer": "Yes, DSCE is considered a reputed private engineering college in Bengaluru.",
+      "detailed_answer": "DSCE is widely regarded as one of the established private engineering colleges in Bengaluru. It offers good infrastructure, strong placement support, multiple engineering branches and an active campus environment."
+    },
+
+    {
+      "category": "admissions",
+      "question": "Which entrance exams are accepted for B.E. admission at DSCE?",
+      "keywords": ["dsce admission exams", "kcet dsce", "comedk dsce", "dsce entrance exam"],
+      "short_answer": "Admissions to B.E. at DSCE are mainly through KCET, COMEDK UGET, and management quota.",
+      "detailed_answer": "Students can get admission into the B.E. program at DSCE through KCET (Karnataka CET), COMEDK UGET, management quota, or DCET for diploma holders entering through lateral entry."
+    },
+
+    {
+      "category": "fees",
+      "question": "What is the fee for DSCE through KCET?",
+      "keywords": ["kcet fee dsce", "cet fee dsce", "government quota fee dsce"],
+      "short_answer": "The approximate KCET fee at DSCE is around ₹1.2 lakh per year.",
+      "detailed_answer": "The total annual fee for KCET government quota seats at DSCE is approximately ₹1.2 lakh including tuition fees, university registration and institutional charges."
+    },
+
+    {
+      "category": "fees",
+      "question": "What is the COMEDK fee at DSCE?",
+      "keywords": ["comedk fee dsce", "comedk tuition dsce", "private quota fee dsce"],
+      "short_answer": "The COMEDK quota fee is approximately ₹2.4–₹2.7 lakh per year.",
+      "detailed_answer": "Students admitted through COMEDK UGET typically pay around ₹2.4–₹2.7 lakh per year including tuition fees and institutional charges."
+    },
+
+    {
+      "category": "fees",
+      "question": "What is the management quota fee at DSCE?",
+      "keywords": ["management quota dsce", "dsce management fee", "direct admission dsce"],
+      "short_answer": "Management quota fees vary by branch and usually range from ₹3 lakh to ₹5.5 lakh per year.",
+      "detailed_answer": "Management quota fees depend on the branch. Popular branches like Computer Science and Artificial Intelligence can cost around ₹5.5 lakh per year, while other branches may range around ₹3–4 lakh annually."
+    },
+
+    {
+      "category": "academics",
+      "question": "Which engineering branches are offered at DSCE?",
+      "keywords": ["branches in dsce", "courses dsce engineering", "dsce departments"],
+      "short_answer": "DSCE offers multiple engineering branches including CSE, AI & ML, ISE, ECE, Mechanical, Civil, Biotechnology and others.",
+      "detailed_answer": "The college offers a wide range of engineering branches such as Computer Science Engineering, Artificial Intelligence & Machine Learning, Information Science Engineering, Electronics & Communication Engineering, Mechanical Engineering, Civil Engineering and several interdisciplinary programs."
+    },
+
+    {
+      "category": "placements",
+      "question": "How are placements at DSCE?",
+      "keywords": ["dsce placements", "placement record dsce", "companies dsce"],
+      "short_answer": "DSCE has strong placements with many IT and consulting companies recruiting every year.",
+      "detailed_answer": "DSCE has an active Training and Placement Cell that conducts recruitment drives every year. More than 100 companies visit the campus annually and hundreds of students are placed through campus recruitment."
+    },
+
+    {
+      "category": "placements",
+      "question": "How many students were placed recently at DSCE?",
+      "keywords": ["placement statistics dsce", "dsce placement numbers"],
+      "short_answer": "Around 748 students were recruited in the 2023-24 placement cycle.",
+      "detailed_answer": "During the 2023-2024 placement season, approximately 748 students secured job offers through campus recruitment at DSCE."
+    },
+
+    {
+      "category": "placements",
+      "question": "Which companies recruit from DSCE?",
+      "keywords": ["companies visiting dsce", "recruiters dsce"],
+      "short_answer": "Companies like Infosys, Capgemini and LTIMindtree recruit from DSCE.",
+      "detailed_answer": "Major companies visiting DSCE include Infosys Limited, Capgemini Technology Services India Limited, LTIMindtree Limited and other national and multinational organizations."
+    },
+
+    {
+      "category": "hostel",
+      "question": "Does DSCE provide hostel facilities?",
+      "keywords": ["dsce hostel", "hostel in dsce", "accommodation dsce"],
+      "short_answer": "Yes, DSCE provides separate hostel facilities for boys and girls.",
+      "detailed_answer": "The college provides hostel accommodation with furnished rooms, mess facilities and basic amenities for both male and female students."
+    },
+
+    {
+      "category": "hostel",
+      "question": "What facilities are available in DSCE hostels?",
+      "keywords": ["hostel facilities dsce", "dsce hostel amenities"],
+      "short_answer": "Facilities include furnished rooms, hot water, washing machines, indoor and outdoor games and dining facilities.",
+      "detailed_answer": "Hostels provide well furnished rooms, hot water systems, indoor and outdoor recreational facilities, washing machines, mess dining halls and other amenities for student comfort."
+    },
+
+    {
+      "category": "campus",
+      "question": "How big is the DSCE campus?",
+      "keywords": ["dsce campus size", "area of dsce"],
+      "short_answer": "The DSCE campus is spread across approximately 23 acres.",
+      "detailed_answer": "The college campus covers about 23 acres in Bengaluru and includes academic buildings, laboratories, sports facilities, hostels and green spaces."
+    },
+
+    {
+      "category": "campus",
+      "question": "Does DSCE have a central library?",
+      "keywords": ["dsce library", "books dsce", "library facilities"],
+      "short_answer": "Yes, DSCE has a large central library with books, journals and digital resources.",
+      "detailed_answer": "The DSCE central library contains thousands of books, journals and digital research resources along with reading halls and study areas for students."
+    },
+
+    {
+      "category": "student_life",
+      "question": "Does DSCE have student clubs?",
+      "keywords": ["clubs dsce", "student organizations dsce"],
+      "short_answer": "Yes, DSCE has technical, cultural and sports clubs.",
+      "detailed_answer": "Students can participate in various technical, cultural and sports clubs including IEEE, SAE and entrepreneurship initiatives."
+    },
+
+    {
+      "category": "academics",
+      "question": "What is the duration of the B.E. program at DSCE?",
+      "keywords": ["be duration dsce", "engineering course length"],
+      "short_answer": "The B.E. program duration is four years.",
+      "detailed_answer": "The undergraduate Bachelor of Engineering program at DSCE is a four-year program divided into eight academic semesters."
+    },
+
+    {
+      "category": "admissions",
+      "question": "Can diploma students join DSCE engineering programs?",
+      "keywords": ["dcet dsce", "lateral entry dsce"],
+      "short_answer": "Yes, diploma holders can join through DCET lateral entry into the second year.",
+      "detailed_answer": "Students who have completed a diploma in engineering can join the second year of the B.E. program through the DCET (Diploma CET) lateral entry admission process."
+    }
+
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "quota_type": "J&K PMSSS",
+  "entry_type": "1st Year B.E.",
+  "conducting_authority": "AICTE (Pragati / PMSSS Portal)",
+
+  "overview": {
+    "description": "Admissions under the J&K PMSSS (Prime Minister’s Special Scholarship Scheme) are offered to eligible students from Jammu & Kashmir and Ladakh through AICTE centralized allotment.",
+    "admission_basis": "Seat allotment through PMSSS portal",
+    "program_duration": "4 years"
+  },
+
+  "academic_years": {
+
+    "2025-2026": {
+      "reporting_location": {
+        "building": "Building No.1",
+        "verification_room": "Room No.006",
+        "fee_section": "2nd Floor, Room No.206"
+      },
+
+      "admission_process": [
+        "Obtain allotment letter from PMSSS Portal (AICTE)",
+        "Report to DSCE Building No.1, Room No.006 for verification",
+        "Verification of allotment letter and original documents",
+        "Generate application number",
+        "Upload scanned documents in student login",
+        "Submit allotment letter with application number at fee section",
+        "Print application form",
+        "Submit original documents",
+        "Obtain acknowledgement"
+      ],
+
+      "documents_required": [
+        "PMSSS Allotment Letter issued by AICTE",
+        "10th Marks Sheet (Original)",
+        "12th Marks Sheet (Original)",
+        "Migration Certificate / Study Certificate",
+        "Parent PAN Card or Aadhaar Card (Soft Copy)",
+        "Student Passport Size Photo (Soft Copy)",
+        "Student Signature (Soft Copy)",
+        "Student Aadhaar Card (Soft Copy)",
+        "Three sets of photocopies of all documents"
+      ],
+
+      "document_upload_requirements": {
+        "format": ["JPEG", "JPG"],
+        "max_file_size_mb": 1,
+        "passport_photo_max_kb": 500,
+        "note": "Soft copies from Sl No.1–6 must be uploaded on the college portal"
+      }
+    },
+
+    "2024-2025": {
+      "reporting_location": {
+        "building": "Building No.1",
+        "verification_room": "Room No.006",
+        "fee_section": "2nd Floor, Room No.206"
+      },
+
+      "admission_process": [
+        "Obtain allotment letter from PMSSS Portal (AICTE)",
+        "Report to DSCE Building No.1, Room No.006 for verification",
+        "Verification of allotment letter and original documents",
+        "Generate application number",
+        "Upload scanned documents in student login",
+        "Submit allotment letter with application number at fee section",
+        "Print application form",
+        "Submit original documents",
+        "Obtain acknowledgement"
+      ],
+
+      "documents_required": [
+        "PMSSS Allotment Letter issued by AICTE",
+        "10th Marks Sheet (Original)",
+        "12th Marks Sheet (Original)",
+        "Migration Certificate / Study Certificate",
+        "Parent PAN Card or Aadhaar Card (Soft Copy)",
+        "Student Passport Size Photo (Soft Copy)",
+        "Student Signature (Soft Copy)",
+        "Student Aadhaar Card (Soft Copy)",
+        "Three sets of photocopies of all documents"
+      ],
+
+      "document_upload_requirements": {
+        "format": ["JPEG", "JPG"],
+        "max_file_size_mb": 1,
+        "passport_photo_max_kb": 500
+      }
+    }
+
+  },
+
+  "campus_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bengaluru",
+    "pincode": "560111"
+  },
+
+  "contact_details": {
+    "phone": "080-26662226 Extn: 114",
+    "alternate_phone": "080-42161708",
+    "email": [
+      "admin-section@dayanandasagar.edu",
+      "ppl-dsce@dayanandasagar.edu"
+    ]
+  }
+}

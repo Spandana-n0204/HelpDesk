@@ -1,0 +1,75 @@
+{
+  "college": "Dayananda Sagar College of Engineering",
+  "scholarships": [
+    {
+      "id": 1,
+      "name": "AIC-DSU Foundation Scholarships",
+      "sponsor": "NITI Aayog, Government of India & Dayananda Sagar University",
+      "eligibility": "Young achievers with a master’s degree in Science/Engineering interested in doctoral research. Preference for candidates with research/industry experience.",
+      "apply_procedure": "Refer official AIC-DSU portal for application details."
+    },
+    {
+      "id": 2,
+      "name": "Post Matric Scholarships Scheme for Minorities",
+      "sponsor": "Ministry of Minority Affairs, Government of India",
+      "eligibility": "Students belonging to Muslim, Christian, Sikh, Buddhist, Jain, Parsi communities studying in India as per scheme guidelines.",
+      "apply_procedure": "Apply through National Scholarship Portal (NSP)."
+    },
+    {
+      "id": 3,
+      "name": "Post-Matric Scholarship for Students with Disabilities",
+      "sponsor": "Department of Empowerment of Persons with Disabilities",
+      "eligibility": "Students with disabilities defined under Rights of Persons with Disabilities Act, 2016.",
+      "apply_procedure": "Apply through official government scholarship portal."
+    },
+    {
+      "id": 4,
+      "name": "Central Sector Scheme of Scholarships",
+      "sponsor": "Department of Higher Education, Government of India",
+      "eligibility": "Students above 80th percentile in Class XII and pursuing regular courses.",
+      "apply_procedure": "Apply via National Scholarship Portal."
+    },
+    {
+      "id": 5,
+      "name": "PRAGATI Scholarship Scheme for Girl Students",
+      "sponsor": "AICTE",
+      "eligibility": "Maximum two girl children per family. Family income less than ₹8 lakh per annum.",
+      "apply_procedure": "Apply through AICTE scholarship portal."
+    },
+    {
+      "id": 6,
+      "name": "SAKSHAM Scholarship Scheme",
+      "sponsor": "AICTE",
+      "eligibility": "Specially-abled student (≥40% disability). Family income less than ₹8 lakh per annum.",
+      "apply_procedure": "Apply through AICTE scholarship portal."
+    },
+    {
+      "id": 7,
+      "name": "Post Matric Scholarship for SC/ST Students",
+      "sponsor": "Department of Social Welfare, Government of Karnataka",
+      "eligibility": "SC/ST students. Income below ₹2.5 lakh or as per government norms.",
+      "apply_procedure": "Apply through State Scholarship Portal (SSP)."
+    },
+    {
+      "id": 8,
+      "name": "E-PASS / KAREPASS",
+      "sponsor": "Dept of Backward Class Welfare, Government of Karnataka",
+      "eligibility": "OBC students. Parental income below specified limits.",
+      "apply_procedure": "Apply through State Scholarship Portal (SSP)."
+    },
+    {
+      "id": 9,
+      "name": "Jindal Scholarship",
+      "sponsor": "Sitaram Jindal Foundation",
+      "eligibility": "As per foundation norms.",
+      "apply_procedure": "Download application from official website, submit signed copy to foundation office."
+    },
+    {
+      "id": 10,
+      "name": "Dharmasthala Kshemabiruddi Sanga Scholarship",
+      "sponsor": "Dharmasthala Kshemabiruddi Sanga",
+      "eligibility": "As per organization norms.",
+      "apply_procedure": "Submit application at organization office after institute signature."
+    }
+  ]
+}

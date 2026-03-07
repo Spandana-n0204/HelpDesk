@@ -1,0 +1,3 @@
+from document_loader import process_all_documents
+
+process_all_documents()

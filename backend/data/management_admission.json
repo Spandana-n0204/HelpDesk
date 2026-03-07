@@ -1,0 +1,96 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "quota_type": "Management",
+  "entry_type": "1st Year B.E.",
+
+  "academic_years": {
+    "2025-2026": {
+      "application_mode": {
+        "email_primary": "admissions@dayanandasagar.edu",
+        "email_secondary": "query@dayanandasagar.edu",
+        "physical_visit": "Hall of Admissions, DSCE Campus, Kumaraswamy Layout, Bangalore"
+      },
+
+      "admission_process": [
+        "Send admission request via email or visit the Hall of Admissions at DSCE Campus",
+        "Submit required academic documents and contact details",
+        "Management office reviews the application",
+        "Admission confirmation provided by management",
+        "Fee payment to be completed after confirmation"
+      ],
+
+      "branch_fee_structure_lakhs_per_year": [
+        { "branch": "Aeronautical Engineering", "yearly_fee_lakhs": 3.75, "total_4_years_lakhs": 15 },
+        { "branch": "Artificial Intelligence & Machine Learning", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Automobile Engineering", "yearly_fee_lakhs": 3.0, "total_4_years_lakhs": 12 },
+        { "branch": "Biotechnology Engineering", "yearly_fee_lakhs": 3.25, "total_4_years_lakhs": 13 },
+        { "branch": "Chemical Engineering", "yearly_fee_lakhs": 3.0, "total_4_years_lakhs": 12 },
+        { "branch": "Civil Engineering", "yearly_fee_lakhs": 3.0, "total_4_years_lakhs": 12 },
+        { "branch": "Computer Science Engineering", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Computer Science Design", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Computer Science & Engineering (Data Science)", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Computer Science & Engineering (Cyber Security)", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Computer Science & Engineering (IoT & Cyber Security including Blockchain)", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Electronics & Communication Engineering", "yearly_fee_lakhs": 4.25, "total_4_years_lakhs": 17 },
+        { "branch": "Electrical & Electronics Engineering", "yearly_fee_lakhs": 3.25, "total_4_years_lakhs": 13 },
+        { "branch": "Electronics & Telecommunication Engineering", "yearly_fee_lakhs": 3.25, "total_4_years_lakhs": 13 },
+        { "branch": "Information Science Engineering", "yearly_fee_lakhs": 5.5, "total_4_years_lakhs": 22 },
+        { "branch": "Mechanical Engineering", "yearly_fee_lakhs": 3.0, "total_4_years_lakhs": 12 },
+        { "branch": "Medical Electronics Engineering", "yearly_fee_lakhs": 3.0, "total_4_years_lakhs": 12 },
+        { "branch": "Robotics and Artificial Intelligence", "yearly_fee_lakhs": 3.25, "total_4_years_lakhs": 13 }
+      ],
+
+      "additional_fees": {
+        "approx_other_fees_per_year_inr": 50000,
+        "note": "Additional institutional fees applicable every year"
+      },
+
+      "minimum_academic_requirements": {
+        "10th_standard": "Minimum 70% in Maths and Science separately",
+        "12th_standard": "Minimum 65% in Maths and Physics separately (Pre-Board)",
+        "entrance_exam_required": [
+          "CET",
+          "COMEDK",
+          "AIEEE",
+          "JEE",
+          "Any other National Entrance Test"
+        ],
+        "foreign_board_requirement": "AIU equivalence certificate required if studied outside Indian Board"
+      },
+
+      "documents_required": [
+        "Migration Certificate (for Non-Karnataka students)",
+        "Photocopy of Parent PAN Card",
+        "Three sets of photocopies of all documents",
+        "Scanned original documents in colour PDF format under 1MB",
+        "Passport size photograph soft copy under 500KB"
+      ],
+
+      "payment_mode": "Demand Draft in favor of Dayananda Sagar College of Engineering after management confirmation or Online (details provided by institution)"
+    }
+  },
+
+  "hostel_contacts": [
+    { "hostel_name": "Indian Boys Hostel", "contact_number": "080-42161701" },
+    { "hostel_name": "NRI Boys Hostel", "contact_number": "080-42162745" },
+    { "hostel_name": "Girls Hostel", "contact_number": "080-42161727" }
+  ],
+
+  "reporting_location": {
+    "area": "Kumaraswamy Layout",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "pincode": "560111"
+  },
+
+  "contact_details": {
+    "phone": [
+      "+91 80 26662226",
+      "+91 80 26665910",
+      "+91 80 26665926",
+      "+91 80 42161707"
+    ],
+    "fax": "080-26660789",
+    "website": "https://www.dayanandasagar.edu"
+  }
+}

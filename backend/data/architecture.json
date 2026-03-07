@@ -1,0 +1,72 @@
+{
+  "institution": "Dayananda Sagar College of Engineering",
+  "campus_overview": {
+    "description": "Dayananda Sagar College of Engineering (DSCE) is located in Kumaraswamy Layout, Bengaluru. The campus provides a balanced academic environment with modern infrastructure, green spaces, and well-planned academic blocks that support engineering education and student life.",
+    "campus_area_acres": 23,
+    "environment": "The campus features landscaped gardens, tree-lined pathways and open spaces that create a calm and eco-friendly learning environment.",
+    "eco_friendly_initiatives": [
+      "Rainwater harvesting systems",
+      "Waste segregation and management",
+      "Water recycling systems",
+      "Green landscaping with trees and lawns",
+      "Clean campus initiatives through NSS activities"
+    ]
+  },
+
+  "academic_infrastructure": {
+    "classrooms": {
+      "total_classrooms": 120,
+      "smart_classrooms": "Most classrooms equipped with audio-visual teaching aids and projectors"
+    },
+    "laboratories": {
+      "total_labs": 130,
+      "computer_labs": 18,
+      "description": "Department-specific laboratories equipped with modern instruments for practical engineering training."
+    },
+    "research_centers": 18,
+    "internet_connectivity": {
+      "campus_wifi": true,
+      "internet_bandwidth": "High speed internet across academic blocks"
+    }
+  },
+
+  "library_and_learning_resources": {
+    "central_library": {
+      "floors": 7,
+      "seating_capacity": 800,
+      "titles": 38000,
+      "volumes": 136000,
+      "printed_journals": 150,
+      "digital_journals": 7000,
+      "features": [
+        "Digital library access",
+        "Online research databases",
+        "Automated library management system",
+        "Reading halls and study spaces"
+      ]
+    }
+  },
+
+  "campus_facilities": [
+    "Auditoriums for academic and cultural events",
+    "Seminar halls with audio-visual equipment",
+    "Amphitheatre for student events",
+    "Sports grounds and indoor sports facilities",
+    "Gymnasium and fitness facilities",
+    "Food courts and cafeterias",
+    "Bank and ATM facilities",
+    "Medical and first aid facilities",
+    "Photocopy and stationery services",
+    "Parking facilities for students and staff"
+  ],
+
+  "student_life_environment": {
+    "clubs_and_activities": [
+      "Technical clubs such as IEEE, SAE and ISTE",
+      "Cultural and literary clubs",
+      "Sports and fitness activities",
+      "Entrepreneurship and innovation programs"
+    ],
+    "campus_experience": "The DSCE campus offers a vibrant student atmosphere combining academics, cultural activities, technical events and sports. The green surroundings and modern facilities create a productive environment for engineering students."
+  }
+}

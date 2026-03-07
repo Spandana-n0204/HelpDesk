@@ -1,0 +1,100 @@
+{
+  "college_name": "Dayananda Sagar College of Engineering",
+  "short_name": "DSCE",
+
+  "address": {
+    "street": "Shavige Malleshwara Hills, Kumaraswamy Layout",
+    "city": "Bengaluru",
+    "state": "Karnataka",
+    "country": "India",
+    "pincode": "560078"
+  },
+
+  "office_hours": "9:00 AM to 5:00 PM (Except Holidays)",
+
+  "administrative_contacts": [
+    {
+      "department": "Reception",
+      "name": "Ms. Meera",
+      "phone": ["080-42161708"],
+      "extension": "708"
+    },
+    {
+      "department": "Principal's Office",
+      "name": "Dr. B G Prasad",
+      "designation": "Principal",
+      "phone": ["080-42161753", "080-26662226"],
+      "email": ["ppl-dsce@dayanandasagar.edu"],
+      "extension": "2753"
+    },
+    {
+      "department": "Admissions",
+      "name": "Ms. Prema David",
+      "designation": "Director - Admissions",
+      "phone": ["080-42161750", "080-42161751", "9916075170"],
+      "extension": "2750/51"
+    },
+    {
+      "department": "Exam Section",
+      "name": "Mr. Ranjankumar Jha",
+      "phone": ["080-42161770"],
+      "email": ["ranjankr_jha@dayanandasagar.edu"],
+      "extension": "2770"
+    },
+    {
+      "department": "Fee Section",
+      "name": "Mr. Kumar M.P.",
+      "phone": ["080-26662226"],
+      "email": ["feesection_dsce@yahoo.com"],
+      "extension": "120"
+    },
+    {
+      "department": "Scholarship Section",
+      "name": "Mr. Karigowda",
+      "phone": ["080-26662226"],
+      "email": ["scholarship-dsce@dayanandasagar.edu"],
+      "extension": "116"
+    },
+    {
+      "department": "Placement Cell",
+      "name": "Mr. M N Guruvenkatesh",
+      "designation": "Vice President - Placements & Skill Development Centre",
+      "phone": ["080-26663981", "080-42161497"],
+      "email": [
+        "gm-cr@dayanandasagar.edu",
+        "dsi_placement@yahoo.com"
+      ],
+      "extension": "2497"
+    }
+  ],
+
+  "department_contacts": [
+    {
+      "department_name": "Computer Science & Engineering",
+      "hod": "Dr. D.R. Ramesh Babu",
+      "phone": "080-42161726",
+      "email": "hod-cse@dayanandasagar.edu",
+      "extension": "2726"
+    },
+    {
+      "department_name": "Information Science & Engineering",
+      "hod": "Dr. Rajeshwari J",
+      "phone": "080-42161725",
+      "email": "hod-ise@dayanandasagar.edu",
+      "extension": "2725"
+    },
+    {
+      "department_name": "Mechanical Engineering",
+      "hod": "Dr. Keshavamurthy R",
+      "phone": "080-42161742",
+      "email": "hod-me@dayanandasagar.edu",
+      "extension": "2742"
+    }
+  ],
+
+  "maps": {
+    "google_maps_link": "https://maps.google.com/?q=Dayananda+Sagar+College+of+Engineering+Bangalore"
+  },
+
+  "official_website": "https://www.dsce.edu.in"
+}
