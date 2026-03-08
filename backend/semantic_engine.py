@@ -30,7 +30,7 @@ def generate_response(question: str):
 
     question_vector = vectorizer.transform([question]).toarray().astype("float32")
 
-    D, I = index.search(question_vector, k=8)
+    D, I = index.search(question_vector, k=12)
 
     retrieved_docs = [documents[i] for i in I[0]]
 
