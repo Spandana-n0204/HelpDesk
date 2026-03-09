@@ -1,12 +1,13 @@
-class ContextManager:
-    def __init__(self, max_history=5):
-        self.max_history = max_history
-        self.history = []
+def build_context(results: list) -> str:
+    """
+    Format retrieved chunks into a numbered context block for the LLM.
+    Each chunk is separated clearly so the model can reference them.
+    """
+    if not results:
+        return ""
 
-    def add_message(self, role, content):
-        self.history.append({"role": role, "content": content})
-        if len(self.history) > self.max_history:
-            self.history.pop(0)
+    lines = []
+    for i, r in enumerate(results, 1):
+        lines.append(f"[{i}] {r['text'].strip()}")
 
-    def get_context(self):
-        return self.history
+    return "\n\n".join(lines)

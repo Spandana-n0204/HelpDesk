@@ -1,0 +1,22 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# ML / vector files
+*.pkl
+*.index
+
+# HuggingFace / model cache
+.cache/
+
+# Environment variables
+.env
+
+# OS junk
+.DS_Store
+Thumbs.db

@@ -1,55 +1,31 @@
 import os
-import json
-import pickle
-import numpy as np
-import faiss
-from sklearn.feature_extraction.text import TfidfVectorizer
+import logging
 
-DATA_FOLDER = "data"
+from document_loader import load_all_chunks
+from vector_store     import VectorStore
 
-documents = []
+logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
+logger = logging.getLogger(__name__)
 
-for file in os.listdir(DATA_FOLDER):
-    if file.endswith(".json"):
-        with open(os.path.join(DATA_FOLDER, file), "r", encoding="utf-8") as f:
-            data = json.load(f)
+BASE_DIR  = os.path.dirname(os.path.abspath(__file__))
+DOCS_DIRS = [
+    os.path.join(BASE_DIR, "..", "documents"),
+    os.path.join(BASE_DIR, "..", "extracted_data"),
+    os.path.join(BASE_DIR, "data"),
+]
 
-            # Convert JSON to structured text chunks
-            def extract_chunks(obj, parent_key=""):
-                chunks = []
 
-                if isinstance(obj, dict):
-                    for key, value in obj.items():
-                        new_key = f"{parent_key} {key}".strip()
-                        chunks.extend(extract_chunks(value, new_key))
+def rebuild(docs_dirs: list = None) -> VectorStore:
+    dirs   = docs_dirs or DOCS_DIRS
+    chunks = load_all_chunks(dirs)
+    if not chunks:
+        raise RuntimeError(f"No chunks found in: {dirs}")
+    store  = VectorStore()
+    store.build(chunks)
+    logger.info(f"Index built with {len(chunks)} chunks.")
+    return store
 
-                elif isinstance(obj, list):
-                    for item in obj:
-                        chunks.extend(extract_chunks(item, parent_key))
 
-                else:
-                    chunks.append(f"{parent_key}: {obj}")
-
-                return chunks
-
-            documents.extend(extract_chunks(data))
-
-print(f"Total chunks created: {len(documents)}")
-
-vectorizer = TfidfVectorizer()
-vectors = vectorizer.fit_transform(documents)
-
-dense_vectors = vectors.toarray().astype("float32")
-
-index = faiss.IndexFlatL2(dense_vectors.shape[1])
-index.add(dense_vectors)
-
-faiss.write_index(index, "faiss_index.index")
-
-with open("vectorizer.pkl", "wb") as f:
-    pickle.dump(vectorizer, f)
-
-with open("documents.pkl", "wb") as f:
-    pickle.dump(documents, f)
-
-print("Index rebuilt successfully.")
+if __name__ == "__main__":
+    rebuild()
+    print("Done. vector_store.pkl written.")
