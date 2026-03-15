@@ -1,3 +1,6 @@
+fastapi
+uvicorn
+requests
 flask
 flask-cors
 pytesseract
@@ -6,3 +9,6 @@ pillow
 sentence-transformers
 scikit-learn
 numpy
+torch
+transformers
+faiss-cpu

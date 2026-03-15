@@ -1,82 +1,61 @@
+"""
+semantic_search.py — Retrieval for DSCE HelpDesk
+Pipeline: RRF(semantic + keyword) → MMR re-rank → clean context string
+"""
+
 import logging
 import numpy as np
 
 logger = logging.getLogger(__name__)
 
-TOP_K_CANDIDATES = 10   # fetch this many before MMR
-TOP_K_FINAL      = 4    # return this many to the LLM
-MMR_LAMBDA       = 0.6  # 1.0 = pure relevance, 0.0 = pure diversity
+TOP_K_CANDIDATES = 10
+TOP_K_FINAL      = 4      # chunks sent to LLM — keep small for speed
+MMR_LAMBDA       = 0.65   # higher = more relevant, lower = more diverse
 
 
-# ── RRF ───────────────────────────────────────────────────────────────────────
-
-def _reciprocal_rank_fusion(
-    sem_scores: np.ndarray,
-    kw_scores:  np.ndarray,
-    k: int            = 60,
-    sem_weight: float = 0.7,
-) -> np.ndarray:
-    """Combine two score arrays via Reciprocal Rank Fusion."""
-    n         = len(sem_scores)
-    sem_ranks = n - sem_scores.argsort().argsort()
-    kw_ranks  = n - kw_scores.argsort().argsort()
-    return (
-        sem_weight       * (1.0 / (k + sem_ranks))
-        + (1 - sem_weight) * (1.0 / (k + kw_ranks))
-    )
+def _rrf(sem: np.ndarray, kw: np.ndarray, k: int = 60, w: float = 0.7) -> np.ndarray:
+    n  = len(sem)
+    rs = n - sem.argsort().argsort()
+    rk = n - kw.argsort().argsort()
+    return w / (k + rs) + (1 - w) / (k + rk)
 
 
-# ── MMR ───────────────────────────────────────────────────────────────────────
-
-def _mmr_rerank(
-    query_emb:  np.ndarray,
-    candidates: list,
-    embeddings: np.ndarray,
-    top_k:      int,
-    lam:        float = MMR_LAMBDA,
-) -> list:
-    """Maximal Marginal Relevance — balance relevance with diversity."""
-    selected  = []
-    remaining = list(candidates)
-
+def _mmr(q_emb: np.ndarray, candidates: list, embs: np.ndarray,
+         top_k: int, lam: float = MMR_LAMBDA) -> list:
+    selected, remaining = [], list(candidates)
     while remaining and len(selected) < top_k:
         if not selected:
-            scores = [float(query_emb @ embeddings[i]) for i in remaining]
-            best   = remaining[int(np.argmax(scores))]
+            scores = [float(q_emb @ embs[i]) for i in remaining]
         else:
-            scores = []
-            for idx in remaining:
-                rel        = float(query_emb @ embeddings[idx])
-                redundancy = max(float(embeddings[idx] @ embeddings[s]) for s in selected)
-                scores.append(lam * rel - (1 - lam) * redundancy)
-            best = remaining[int(np.argmax(scores))]
-
+            scores = [
+                lam * float(q_emb @ embs[i])
+                - (1 - lam) * max(float(embs[i] @ embs[s]) for s in selected)
+                for i in remaining
+            ]
+        best = remaining[int(np.argmax(scores))]
         selected.append(best)
         remaining.remove(best)
-
     return selected
 
 
-# ── Public retrieval function ─────────────────────────────────────────────────
-
-def retrieve(store, query: str, top_k_final: int = TOP_K_FINAL) -> list:
-    """
-    Full pipeline: RRF → candidate pool → MMR → final results.
-    Returns list of {"text": str, "score": float}.
-    """
+def retrieve(store, query: str, top_k: int = TOP_K_FINAL) -> list:
+    """Return list of {text, score} dicts."""
     if store.embeddings is None or not store.chunks:
         return []
 
-    sem_scores = store.semantic_scores(query)
-    kw_scores  = store.keyword_scores(query)
-    rrf_scores = _reciprocal_rank_fusion(sem_scores, kw_scores)
+    q_emb  = store.encode_query(query)
+    sem    = store.semantic_scores(q_emb)
+    kw     = store.keyword_scores(query)
+    rrf    = _rrf(sem, kw)
 
-    candidate_idxs = rrf_scores.argsort()[::-1][:TOP_K_CANDIDATES].tolist()
+    cands  = rrf.argsort()[::-1][:TOP_K_CANDIDATES].tolist()
+    final  = _mmr(q_emb, cands, store.embeddings, top_k)
 
-    q_emb      = store.encode_query(query)
-    final_idxs = _mmr_rerank(q_emb, candidate_idxs, store.embeddings, top_k_final)
+    return [{"text": store.chunks[i], "score": float(rrf[i])} for i in final]
 
-    return [
-        {"text": store.chunks[i], "score": float(rrf_scores[i])}
-        for i in final_idxs
-    ]
+
+def build_context(results: list) -> str:
+    """Format chunks into a numbered context block for the LLM."""
+    if not results:
+        return ""
+    return "\n\n".join(f"[{i+1}] {r['text'].strip()}" for i, r in enumerate(results))
