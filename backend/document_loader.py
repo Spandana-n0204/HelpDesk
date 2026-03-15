@@ -1,10 +1,6 @@
 """
 document_loader.py — Load and chunk DSCE documents
-Fixes:
-  - JSON → rich natural-language sentences (not key fragments)
-  - Sentence-aware chunking with overlap
-  - Noise filter: drops keyword-only / too-short chunks
-  - MD5 deduplication
+Fix: skips master_index.json (table of contents — pollutes retrieval)
 """
 
 import json, os, re, hashlib, logging
@@ -14,6 +10,9 @@ from typing import Any
 logger = logging.getLogger(__name__)
 
 MIN_CHUNK_CHARS = 60
+
+# Skip these files — they are index/manifest files, not real content
+SKIP_FILES = {"master_index.json"}
 
 
 def _hash(text: str) -> str:
@@ -30,15 +29,12 @@ def _is_noise(text: str) -> bool:
     return False
 
 
-# ── JSON → Natural Language ────────────────────────────────────────────────────
-
 def _json_to_chunks(data: Any, prefix: str = "") -> list:
     chunks = []
     if isinstance(data, dict):
         for key, value in data.items():
             hkey  = key.replace("_", " ").replace("-", " ").strip()
             child = f"{prefix} > {hkey}" if prefix else hkey
-
             if isinstance(value, (str, int, float, bool)):
                 chunks.append(f"{child}: {value}")
             elif isinstance(value, list):
@@ -49,7 +45,7 @@ def _json_to_chunks(data: Any, prefix: str = "") -> list:
                         chunks.extend(_json_to_chunks(item, child))
             elif isinstance(value, dict):
                 if all(isinstance(v, (str, int, float, bool)) for v in value.values()) and len(value) <= 6:
-                    parts = [f"{k.replace('_',' ')}: {v}" for k, v in value.items()]
+                    parts = [f"{k.replace('_', ' ')}: {v}" for k, v in value.items()]
                     chunks.append(f"{child} — " + "; ".join(parts))
                 else:
                     chunks.extend(_json_to_chunks(value, child))
@@ -66,15 +62,16 @@ def _load_structured_json(path: str) -> list:
         data = json.load(f)
     topic  = Path(path).stem.replace("_", " ").replace("-", " ").title()
     raw    = _json_to_chunks(data, topic)
-    # Merge tiny siblings into richer sentences
     merged, buf = [], ""
     for c in raw:
         if len(buf) + len(c) < 380:
             buf = (buf + " | " + c).strip(" |")
         else:
-            if buf: merged.append(buf)
+            if buf:
+                merged.append(buf)
             buf = c
-    if buf: merged.append(buf)
+    if buf:
+        merged.append(buf)
     return merged
 
 
@@ -93,7 +90,10 @@ def _load_faq_json(path: str) -> list:
                     chunks.extend(_json_to_chunks(item))
     elif isinstance(data, dict):
         for q, a in data.items():
-            chunks.append(f"Q: {q}\nA: {a}" if isinstance(a, str) else "\n".join(_json_to_chunks(a, q)))
+            if isinstance(a, str):
+                chunks.append(f"Q: {q}\nA: {a}")
+            else:
+                chunks.extend(_json_to_chunks(a, q))
     return chunks
 
 
@@ -102,18 +102,19 @@ def _chunk_text(text: str, max_chars: int = 420, overlap: int = 80) -> list:
     chunks, cur = [], ""
     for s in sentences:
         s = s.strip()
-        if not s: continue
+        if not s:
+            continue
         if len(cur) + len(s) + 1 <= max_chars:
             cur = (cur + " " + s).strip()
         else:
-            if cur: chunks.append(cur)
+            if cur:
+                chunks.append(cur)
             tail = cur[-overlap:] if len(cur) > overlap else cur
             cur  = (tail + " " + s).strip()
-    if cur: chunks.append(cur)
+    if cur:
+        chunks.append(cur)
     return chunks
 
-
-# ── Public ─────────────────────────────────────────────────────────────────────
 
 def load_all_chunks(docs_dirs: list) -> list:
     raw = []
@@ -123,11 +124,13 @@ def load_all_chunks(docs_dirs: list) -> list:
             continue
         for root, _, files in os.walk(d):
             for fname in files:
+                if fname.lower() in SKIP_FILES:
+                    logger.info(f"Skipping: {fname}")
+                    continue
                 fpath = os.path.join(root, fname)
                 try:
                     if fname.endswith(".json"):
-                        stem = fname.lower()
-                        if any(x in stem for x in ("faq", "qa")):
+                        if any(x in fname.lower() for x in ("faq", "qa")):
                             raw.extend(_load_faq_json(fpath))
                         else:
                             raw.extend(_load_structured_json(fpath))
@@ -139,7 +142,8 @@ def load_all_chunks(docs_dirs: list) -> list:
     seen, clean = set(), []
     for c in raw:
         c = c.strip()
-        if _is_noise(c): continue
+        if _is_noise(c):
+            continue
         h = _hash(c)
         if h not in seen:
             seen.add(h)
