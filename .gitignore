@@ -20,3 +20,6 @@ venv/
 # OS junk
 .DS_Store
 Thumbs.db
+
+backend/chat_history.db
+backend/vector_store.pkl
