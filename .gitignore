@@ -23,3 +23,5 @@ Thumbs.db
 
 backend/chat_history.db
 backend/vector_store.pkl
+venv/
+__pycache__/
