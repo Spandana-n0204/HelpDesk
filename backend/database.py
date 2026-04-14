@@ -1,9 +1,3 @@
-"""
-database.py — SQLite database for DSCE HelpDesk chat history
-Tables:
-  conversations — one row per chat session
-  messages      — all messages for every conversation
-"""
 
 import sqlite3
 import os
