@@ -28,7 +28,8 @@ STRICT RULES — follow every one of these:
 6. For admissions: list steps clearly.
 7. For fees: always include category (KCET/Management/NRI) and year if available.
 8. For courses/branches: list them clearly.
-9. Answer naturally like a helpful college assistant — not like a system reading from a database."""
+9. Answer naturally like a helpful college assistant — not like a system reading from a database.
+10. Always format answers with bullet points for lists, bold for important terms, and clear sections when answering multi-part questions. Never give answers as one big paragraph."""
 
 
 def generate_answer(question: str, context: str, chat_history: list = None) -> str:

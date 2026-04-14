@@ -1,14 +1,6 @@
-"""
-app.py — FastAPI backend for DSCE HelpDesk
-Now with persistent chat history via SQLite.
-New endpoints:
-  GET  /conversations?device_id=xxx        — list all past chats
-  GET  /conversations/{id}/messages        — load a specific chat
-  DELETE /conversations/{id}               — delete a chat
-"""
-
 import logging, os, uuid
 from contextlib import asynccontextmanager
+from typing import Optional
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
@@ -45,10 +37,8 @@ store = VectorStore()
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     logger.info("Starting DSCE HelpDesk …")
-    # Init SQLite database
     init_db()
     logger.info("Database ready.")
-    # Load vector store
     if not store.load():
         logger.info("No cache — building index …")
         try:
@@ -70,12 +60,10 @@ app.add_middleware(
 )
 
 
-# ── Request / Response models ──────────────────────────────────────────────────
-
 class ChatRequest(BaseModel):
     question:        str
-    conversation_id: str = ""   # empty = start new conversation
-    device_id:       str = ""   # identifies the user's browser
+    conversation_id: Optional[str] = None   # None = start new conversation
+    device_id:       Optional[str] = ""
 
 
 class ChatResponse(BaseModel):
@@ -83,8 +71,6 @@ class ChatResponse(BaseModel):
     question:        str
     answer:          str
 
-
-# ── Chat endpoint ──────────────────────────────────────────────────────────────
 
 @app.get("/")
 def root():
@@ -105,49 +91,30 @@ def chat(req: ChatRequest):
         raise HTTPException(400, "Question must not be empty.")
 
     # Create new conversation if needed
-    conv_id = req.conversation_id or str(uuid.uuid4())
+    conv_id  = req.conversation_id or str(uuid.uuid4())
     existing = get_messages(conv_id)
     if not existing:
         create_conversation(conv_id, device_id)
-        # Use first question as conversation title
         update_conversation_title(conv_id, question)
 
-    # Get recent history for context memory
     history = get_recent_messages(conv_id, limit=8)
-
-    # Retrieve relevant chunks
     results = retrieve(store, question)
     context = build_context(results)
+    answer  = generate_answer(question, context, history)
 
-    # Generate answer
-    answer = generate_answer(question, context, history)
-
-    # Save both messages to database
     save_message(conv_id, "user",      question)
     save_message(conv_id, "assistant", answer)
 
     return ChatResponse(conversation_id=conv_id, question=question, answer=answer)
 
 
-# ── History endpoints ──────────────────────────────────────────────────────────
-
 @app.get("/conversations")
 def list_conversations(device_id: str = "anonymous"):
-    """
-    Get all past conversations for a device.
-    Frontend calls this on load to populate the sidebar.
-    GET /conversations?device_id=abc123
-    """
     return get_conversations(device_id)
 
 
 @app.get("/conversations/{conversation_id}/messages")
 def load_conversation(conversation_id: str):
-    """
-    Load all messages in a conversation.
-    Frontend calls this when user clicks a past chat in sidebar.
-    GET /conversations/abc-123/messages
-    """
     messages = get_messages(conversation_id)
     if not messages:
         raise HTTPException(404, "Conversation not found.")
@@ -156,26 +123,22 @@ def load_conversation(conversation_id: str):
 
 @app.delete("/conversations/{conversation_id}")
 def remove_conversation(conversation_id: str):
-    """Delete a conversation and all its messages."""
     delete_conversation(conversation_id)
     return {"message": "Deleted."}
 
 
-# ── Debug endpoints ────────────────────────────────────────────────────────────
-
 @app.get("/debug/search")
 def debug_search(q: str, top_k: int = 5):
-    """Check retrieval without calling LLM. GET /debug/search?q=KCET+fee"""
     results = retrieve(store, q, top_k=top_k)
     return {"query": q, "results": results}
 
 
 @app.post("/rebuild")
 def rebuild():
-    """Force re-index all documents after updating data files."""
     try:
         chunks = load_all_chunks(DOCS_DIRS)
         store.build(chunks)
         return {"message": "Rebuilt.", "chunk_count": len(store.chunks)}
     except Exception as e:
         raise HTTPException(500, str(e))
+
